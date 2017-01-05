@@ -1,0 +1,112 @@
+body {
+  margin: 0 auto;
+  height: 100%;
+  background-image: url("img/paper.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: normal;
+  font-size: 5em;
+  color: black;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+#header img {
+  width: 50%;
+  height: 50%;
+}
+
+#contain {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#gauche {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#droite {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#gauche .rond, #droite .croix {
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 50px;
+}
+#gauche .rond {
+  background-image: url("img/moon-hand-drawn-circle.svg");
+}
+#droite .croix {
+  background-image: url("img/delete-cross.svg");
+}
+#centre {
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+}
+#jeu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 310px;
+}
+
+#jeu div {
+  height: 100px;
+  width: 100px;
+}
+
+/*=========================*/
+/*BORDER*/
+/*=========================*/
+
+#x1y1, #x3y1, #x1y3, #x3y3 {
+  border: solid 2px #3d3d3d;
+}
+
+#x2y1, #x2y3 {
+  border-top: solid 2px #3d3d3d;
+  border-bottom: solid 2px #3d3d3d;
+}
+
+#x1y2, #x3y2 {
+  border-right: solid 2px #3d3d3d;
+  border-left: solid 2px #3d3d3d;
+}
+
+/*=========================*/
+/*PLAYERS*/
+/*=========================*/
+
+.player1 {
+  /*background-color: #ff2f6e;*/
+  background-image: url("img/moon-hand-drawn-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.player2 {
+  /*background-color: #3fbe62;*/
+  background-image: url("img/delete-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
