@@ -1,4 +1,4 @@
 # Morpion
 Exercice Javascript
 
-https://magbd.github.io/Morpion/
+https://magbd.github.io/morpion/
